@@ -23,6 +23,14 @@ li {
     text-decoration: none;
 }
 
+li .active {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
 .main {
     margin: 20px 70px 0px 70px;
 }
