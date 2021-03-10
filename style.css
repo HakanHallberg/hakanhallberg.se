@@ -1,0 +1,39 @@
+.container {
+    border: 1px solid black;
+}
+
+.menu {
+    text-align: right;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    margin-right: 60px;
+    font-size: x-large;
+}
+
+.top-menu {
+    border: 1px solid black;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.main {
+    margin: 20px 70px 0px 70px;
+}
+
+.header {
+    text-align: center;
+    font-size: 50px;
+}
+
+.footer {
+    border: 1px solid black;
+    position: fixed;
+    bottom: 20px;
+}
