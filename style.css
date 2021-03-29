@@ -164,3 +164,14 @@ p {
     text-decoration: none;
     cursor: pointer;
 }
+
+.cv {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-row-gap: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: ghostwhite;
+}
