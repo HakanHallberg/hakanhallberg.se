@@ -47,7 +47,20 @@ a {
 }
 
 /**modal css**/
-.modal {
+.infoModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.contactModal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -68,15 +81,29 @@ a {
     width: 80%;
 }
 
-.close {
+.infoClose {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.contactClose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.infoClose:hover,
+.infoClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contactClose:hover,
+.contactClose:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;

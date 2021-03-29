@@ -15,18 +15,26 @@
     <body>
         <header class="menu">
             <ul class="top-menu">
-                <li><a href="contact.html">Contact</a></li>
+                <button id="contactBtn">Contact</button>
                 <button id="infoBtn">About me</button>
                 <li><a href="portfolio.html">Portfolio</a></li>  
             </ul>
         </header>
         <div class="container">
-            <div id="infoModal" class="modal">
+            <div id="infoModal" class="infoModal">
                 <div class="modalContent">
-                    <span class="close">&times;</span>
-                    <p>Some text in the modal</p>
+                    <span class="infoClose">&times;</span>
+                    <p>Some text in the modal about me</p>
                 </div>
             </div>
+
+            <div id="contactModal" class="contactModal">
+                <div class="modalContent">
+                    <span class="contactClose">&times;</span>
+                    <p>Contact form and phonenumber to me</p>
+                </div>
+            </div>
+
             <div class="main">
                 <h1 class="header">Lorem Ipsum Dolor</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor dui facilisis tempus vehicula. 
