@@ -6,20 +6,19 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
         <title>Håkan Hallberg</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <meta name="description" content=""> -->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="menu">
-            <ul class="top-menu">
-                <button id="contactBtn">Contact</button>
-                <button id="infoBtn">About me</button>
-                <li><a href="portfolio.html">Portfolio</a></li>  
-            </ul>
-        </header>
+        <div id="mainDiv">
+        <div class="menu">
+                <button id="infoBtn" class="menuBtn">About me</button> 
+                <button id="portfolioBtn" class="menuBtn">Portfolio</button>
+                <button id="contactBtn" class="menuBtn">Contact</button>
+        </div>
         <div class="container">
             <div id="infoModal" class="infoModal">
                 <div class="modalContent">
@@ -38,6 +37,19 @@
                         Mauris id mauris sit amet lacus ornare elementum. Fusce ultricies ornare massa eu rhoncus. 
                         Mauris pretium fermentum felis ac facilisis. Nam tincidunt velit condimentum nisi laoreet, ut condimentum dolor fermentum. 
                         Aliquam sagittis ipsum tristique ex tincidunt volutpat.</p>
+                </div>
+            </div>
+
+            <div id="portfolioModal" class="portfolioModal">
+                <div class="modalContent">
+                    <span class="portfolioClose">&times;</span>
+                    <h1 class="header">Portfolio</h1>
+                    <div class="portHolder">
+                        <div class="placeholder"><img src="pics\underConstruction.png" alt="Under construction" style="object-fit: cover;"></div>
+                        <div class="placeholder"><img src="pics\underConstruction.png" alt="Under construction" style=""></div>
+                        <div class="placeholder"><img src="pics\underConstruction.png" alt="Under construction" style=""></div>
+                        <div class="placeholder"><img src="pics\underConstruction.png" alt="Under construction" style=""></div>
+                    </div>
                 </div>
             </div>
 
@@ -69,9 +81,14 @@
                     hendrerit auctor mauris sollicitudin. Mauris eu ullamcorper nisl. Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit.</p>
             </div>    
+            <div class="CV">
+                <p>Curiculum Vitae</p>
+                
+            </div>
         </div>
-        <footer class="footer">Social links if I want to display it</footer>
+        <!-- <footer class="footer">Social links if I want to display it</footer> -->
 
-        <script src="script.js" async defer></script>
+    </div>
+        <script src="script.js"></script>
     </body>
 </html>

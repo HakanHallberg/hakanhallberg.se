@@ -5,14 +5,26 @@ var contactBtn = document.getElementById("contactBtn");
 var contactClose = document.getElementsByClassName("contactClose")[0];
 
 contactBtn.onclick = function() {
-    contactModal.style.display = "block";
+    contactModal.style.display = "table";
 }
 
 contactClose.onclick = function() {
     contactModal.style.display = "none";
 }
 
+/*Portfolio Modal */
 
+var portfolioModal = document.getElementById("portfolioModal");
+var portfolioBtn = document.getElementById("portfolioBtn");
+var portfolioClose = document.getElementsByClassName("portfolioClose")[0];
+
+portfolioBtn.onclick = function() {
+    portfolioModal.style.display = "table";
+}
+
+portfolioClose.onclick = function() {
+    portfolioModal.style.display = "none";
+}
 
 /*Info Modal */
 
@@ -21,7 +33,7 @@ var infoBtn = document.getElementById("infoBtn");
 var infoClose = document.getElementsByClassName("infoClose")[0];
 
 infoBtn.onclick = function() {
-    infoModal.style.display = "block";
+    infoModal.style.display = "table";
 }
 
 infoClose.onclick = function() {
@@ -36,5 +48,9 @@ window.onclick = function(event) {
     } 
     else if (event.target == contactModal) {
         contactModal.style.display = "none";
+    }
+
+    else if (event.target == portfolioModal) {
+        portfolioModal.style.display = "none";
     }
 }

@@ -1,34 +1,42 @@
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 .container {
-    border: 1px solid black;
+    width: 75%;
+    margin: auto;
+}
+
+#mainDiv {
+    background-image: radial-gradient(green 65%, black 100%);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
 }
 
 .menu {
-    text-align: right;
-    margin-top: 60px;
+    text-align: center;
+    margin-top: 20px;
     margin-bottom: 100px;
     margin-right: 60px;
     font-size: x-large;
+    padding-top: 40px;
 }
 
-.top-menu {
-    border: 1px solid black;
-    list-style-type: none;
-    overflow: hidden;
+.menuBtn {
+    width: 115px;
+    border-radius: 8px;
+    color: ghostwhite;
+    background-color: darkgreen;
+    font-size: 20px;
 }
 
-li {
-    float: right;
-    display: block;
-    padding: 5px;
-    text-decoration: none;
-}
-
-li .active {
-    text-decoration: underline;
-}
-
-a {
-    text-decoration: none;
+.menuBtn:hover {
+    cursor: pointer;
 }
 
 .main {
@@ -38,13 +46,16 @@ a {
 .header {
     text-align: center;
     font-size: 50px;
+    color: ghostwhite;
 }
-
-.footer {
+p {
+    color: ghostwhite;
+}
+/* .footer {
     border: 1px solid black;
     position: fixed;
     bottom: 20px;
-}
+} */
 
 /**modal css**/
 .infoModal {
@@ -58,6 +69,35 @@ a {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgb(0, 0, 0, 0.4);
+}
+
+.portfolioModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.portHolder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+.placeholder {
+    /* border: 1px solid white; */
+    height: 175px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .contactModal {
@@ -74,16 +114,23 @@ a {
 }
 
 .modalContent {
-    background-color: #008f11;
+    background-color: #215421;
     margin: 10% auto;
     padding: 20px;
-    border: 1px solid ghostwhite;
+    /* border: 1px solid ghostwhite; */
     color: ghostwhite;
     width: 80%;
     border-radius: 25px;
 }
 
 .infoClose {
+    color: ghostwhite;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.portfolioClose {
     color: ghostwhite;
     float: right;
     font-size: 28px;
@@ -99,6 +146,13 @@ a {
 
 .infoClose:hover,
 .infoClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.portfolioClose:hover,
+.portfolioClose:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
