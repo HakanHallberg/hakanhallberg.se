@@ -74,22 +74,24 @@ a {
 }
 
 .modalContent {
-    background-color: #fefefe;
-    margin: 15% auto;
+    background-color: #008f11;
+    margin: 10% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid ghostwhite;
+    color: ghostwhite;
     width: 80%;
+    border-radius: 25px;
 }
 
 .infoClose {
-    color: #aaa;
+    color: ghostwhite;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
 .contactClose {
-    color: #aaa;
+    color: ghostwhite;
     float: right;
     font-size: 28px;
     font-weight: bold;
