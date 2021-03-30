@@ -67,6 +67,11 @@ a:hover {
 }
 p {
     color: ghostwhite;
+    
+}
+
+.about {
+    text-align: start;
 }
 /* .footer {
     border: 1px solid black;
