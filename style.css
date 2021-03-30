@@ -10,7 +10,8 @@ body, html {
 }
 
 #mainDiv {
-    background-image: radial-gradient(green 65%, black 100%);
+    /* background-image: radial-gradient(green 65%, black 100%); */
+    background-color: #808080;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,12 +28,19 @@ body, html {
     padding-top: 40px;
 }
 
-.menuBtn {
-    width: 115px;
-    border-radius: 8px;
-    color: ghostwhite;
-    background-color: darkgreen;
-    font-size: 20px;
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    padding: 8px;
 }
 
 .menuBtn:hover {
@@ -41,6 +49,8 @@ body, html {
 
 .main {
     margin: 20px 70px 0px 70px;
+    color: ghostwhite;
+    text-align: center;
 }
 
 .header {

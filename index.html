@@ -1,95 +1,36 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-        <title>Håkan Hallberg</title>
-        <!-- <meta name="description" content=""> -->
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="mainDiv">
+
+<head>
+    <meta charset="utf-8">
+    <title>Håkan Hallberg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="displayText('intro')">
+    <div id="mainDiv">
         <div class="menu">
-                <button id="infoBtn" class="menuBtn">About me</button> 
-                <button id="portfolioBtn" class="menuBtn">Portfolio</button>
-                <button id="contactBtn" class="menuBtn">Contact</button>
+            <ul>
+                <li id="homebtn" class="menubtns"><a href="#" onclick="displayText('intro')">Home</a></li>
+                <li id="aboutbtn" class="menubtns"><a href="#" onclick="displayText('info')">About me</a></li>
+                <li id="portbtn" class="menubtns"><a href="#" onclick="displayText('portfolio')">Portfolio</a></li>
+                <li id="contactbtn" class="menubtns"><a href="#" onclick="displayText('contact')">Contact</a></li>
+            </ul>
         </div>
         <div class="container">
-            <div id="infoModal" class="infoModal">
-                <div class="modalContent">
-                    <span class="infoClose">&times;</span>
-                    <h1 class="header">Information about me</h1>
-                    <p>Nam eget diam sit amet enim ultrices aliquam. Duis pellentesque sapien venenatis sapien sodales, 
-                        nec bibendum nunc euismod. Vivamus pellentesque dictum enim et hendrerit. Mauris at ullamcorper diam. 
-                        Donec imperdiet dui pharetra, venenatis lacus non, sollicitudin ex. Donec ornare eu augue congue congue. 
-                        Mauris id mauris sit amet lacus ornare elementum. Fusce ultricies ornare massa eu rhoncus. 
-                        Mauris pretium fermentum felis ac facilisis. Nam tincidunt velit condimentum nisi laoreet, 
-                        ut condimentum dolor fermentum. Aliquam sagittis ipsum tristique ex tincidunt volutpat. 
-                        Proin et placerat dui Nam eget diam sit amet enim ultrices aliquam. 
-                        Duis pellentesque sapien venenatis sapien sodales, nec bibendum nunc euismod. 
-                        Vivamus pellentesque dictum enim et hendrerit. Mauris at ullamcorper diam. 
-                        Donec imperdiet dui pharetra, venenatis lacus non, sollicitudin ex. Donec ornare eu augue congue congue. 
-                        Mauris id mauris sit amet lacus ornare elementum. Fusce ultricies ornare massa eu rhoncus. 
-                        Mauris pretium fermentum felis ac facilisis. Nam tincidunt velit condimentum nisi laoreet, ut condimentum dolor fermentum. 
-                        Aliquam sagittis ipsum tristique ex tincidunt volutpat.</p>
-                </div>
-            </div>
-
-            <div id="portfolioModal" class="portfolioModal">
-                <div class="modalContent">
-                    <span class="portfolioClose">&times;</span>
-                    <h1 class="header">Portfolio</h1>
-                    <div class="portHolder">
-                        <div class="placeholder"><img src="pics\underConstruction.png" alt="Under construction" style="object-fit: cover;"></div>
-                        <div class="placeholder"><img src="pics\underConstruction.png" alt="Under construction" style=""></div>
-                        <div class="placeholder"><img src="pics\underConstruction.png" alt="Under construction" style=""></div>
-                        <div class="placeholder"><img src="pics\underConstruction.png" alt="Under construction" style=""></div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="contactModal" class="contactModal">
-                <div class="modalContent">
-                    <span class="contactClose">&times;</span>
-                    <h1 class="header">A form on how to contact me</h1>
-                    <p>Nam eget diam sit amet enim ultrices aliquam. Duis pellentesque sapien venenatis sapien sodales, 
-                        nec bibendum nunc euismod. Vivamus pellentesque dictum enim et hendrerit. Mauris at ullamcorper diam. 
-                        Donec imperdiet dui pharetra, venenatis lacus non, sollicitudin ex. Donec ornare eu augue congue congue. 
-                        Mauris id mauris sit amet lacus ornare elementum. Fusce ultricies ornare massa eu rhoncus. 
-                        Mauris pretium fermentum felis ac facilisis. Nam tincidunt velit condimentum nisi laoreet, 
-                        ut condimentum dolor fermentum. Aliquam sagittis ipsum tristique ex tincidunt volutpat. 
-                        Proin et placerat dui Nam eget diam sit amet enim ultrices aliquam. 
-                        Duis pellentesque sapien venenatis sapien sodales, nec bibendum nunc euismod. 
-                        Vivamus pellentesque dictum enim et hendrerit. Mauris at ullamcorper diam. 
-                        Donec imperdiet dui pharetra, venenatis lacus non, sollicitudin ex. Donec ornare eu augue congue congue. 
-                        Mauris id mauris sit amet lacus ornare elementum. Fusce ultricies ornare massa eu rhoncus. 
-                        Mauris pretium fermentum felis ac facilisis. Nam tincidunt velit condimentum nisi laoreet, ut condimentum dolor fermentum. 
-                        Aliquam sagittis ipsum tristique ex tincidunt volutpat.
-                    </p>
-                </div>
-            </div>
-
-            <div class="main">
-                <h1 class="header">A quick indroduction to my site</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor dui facilisis tempus vehicula. 
-                    In imperdiet ultricies nunc in egestas. Quisque lobortis lorem ac odio convallis, 
-                    hendrerit auctor mauris sollicitudin. Mauris eu ullamcorper nisl. Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit.</p>
-            </div>    
+            <div id="mainDisplay" class="main"></div>
             <div class="cv">
                 <h2>Curiculum Vitae</h2>
-                <a href="http://hakanhallberg.se/CV/CV_Hakan_Hallberg_FrontEnd_Utvecklare.pdf" target= "_blank">CV FrontEnd Utvecklare</a>
-                <a href="http://hakanhallberg.se/CV/CV_Hakan_Hallberg_ServiceNow_Administrator.pdf" target= "_blank">CV ServiceNow Administratör</a>
+                <a href="http://hakanhallberg.se/CV/CV_Hakan_Hallberg_FrontEnd_Utvecklare.pdf" target="_blank">CV
+                    FrontEnd Utvecklare</a>
+                <a href="http://hakanhallberg.se/CV/CV_Hakan_Hallberg_ServiceNow_Administrator.pdf" target="_blank">CV
+                    ServiceNow Administratör</a>
             </div>
         </div>
         <!-- <footer class="footer">Social links if I want to display it</footer> -->
 
     </div>
-        <script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+</body>
+
 </html>
